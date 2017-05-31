@@ -20,7 +20,7 @@
         <!--View Controller-->
         <scene sceneID="iTt-N0-gX7">
             <objects>
-                <viewController storyboardIdentifier="VC1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YPN-Vm-f1k" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC1" id="YPN-Vm-f1k" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3TX-8q-aoU"/>
                         <viewControllerLayoutGuide type="bottom" id="04B-3X-KG3"/>
@@ -37,7 +37,7 @@
         <!--View Controller-->
         <scene sceneID="bDY-ad-eGw">
             <objects>
-                <viewController storyboardIdentifier="VC2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WjM-in-hxB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC2" id="WjM-in-hxB" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SXE-l4-Snc"/>
                         <viewControllerLayoutGuide type="bottom" id="Nf5-hk-HDt"/>
