@@ -20,7 +20,7 @@
         <!--View Controller-->
         <scene sceneID="iTt-N0-gX7">
             <objects>
-                <viewController storyboardIdentifier="VC1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YPN-Vm-f1k" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC1" id="YPN-Vm-f1k" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3TX-8q-aoU"/>
                         <viewControllerLayoutGuide type="bottom" id="04B-3X-KG3"/>
@@ -28,6 +28,16 @@
                     <view key="view" contentMode="scaleToFill" id="oYE-8F-4BS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="page1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rp-qa-xBs">
+                                <rect key="frame" x="166" y="93" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7PF-SQ-ggV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,7 +47,7 @@
         <!--View Controller-->
         <scene sceneID="bDY-ad-eGw">
             <objects>
-                <viewController storyboardIdentifier="VC2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WjM-in-hxB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC2" id="WjM-in-hxB" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SXE-l4-Snc"/>
                         <viewControllerLayoutGuide type="bottom" id="Nf5-hk-HDt"/>
@@ -45,6 +55,16 @@
                     <view key="view" contentMode="scaleToFill" id="CLE-Hv-Jv0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="page2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUi-26-rfL">
+                                <rect key="frame" x="166" y="93" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vS5-dL-Jpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
