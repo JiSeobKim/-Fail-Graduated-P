@@ -1,22 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5wC-zp-HtK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wng-ML-cwp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--PageVC-->
+        <!--VCNumber-->
         <scene sceneID="GVn-5U-Xk1">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="5wC-zp-HtK" customClass="PageVC" customModule="GraduatedProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="ZyW-rz-BG3"/>
+                <pageViewController storyboardIdentifier="PageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="5wC-zp-HtK" customClass="PageVC" customModule="GraduatedProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="VCNumber" id="ZyW-rz-BG3">
+                        <barButtonItem key="leftBarButtonItem" image="Group" id="Kly-LT-wNG">
+                            <connections>
+                                <segue destination="REJ-jn-MlR" kind="show" id="2gc-jY-FLM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0B3-x3-4nW">
+                            <connections>
+                                <action selector="Add:" destination="5wC-zp-HtK" id="V49-4p-eBX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SME-R7-8oP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831.2" y="110.19490254872565"/>
+            <point key="canvasLocation" x="2770.4000000000001" y="110.19490254872565"/>
+        </scene>
+        <!--Add Member-->
+        <scene sceneID="A6Y-Qc-CKV">
+            <objects>
+                <viewController storyboardIdentifier="AddMember" id="Ok9-Pi-TJX" customClass="AddMember" customModule="GraduatedProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vcq-8n-Ldq"/>
+                        <viewControllerLayoutGuide type="bottom" id="CAv-DD-Tcg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="76l-sC-CZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p9c-Yw-a0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3670" y="110"/>
+        </scene>
+        <!--Member-->
+        <scene sceneID="tBe-uj-t6d">
+            <objects>
+                <viewController id="REJ-jn-MlR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zv0-rT-mnW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ljl-77-kyX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GID-Og-DJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Member" id="Rvr-3M-c5M">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="FE2-OQ-Dq8"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MuL-x0-619" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2775" y="-557"/>
+        </scene>
+        <!--Add Report-->
+        <scene sceneID="CjM-4I-fwo">
+            <objects>
+                <viewController storyboardIdentifier="AddReport" id="i9Z-Pe-XyC" customClass="AddReport" customModule="GraduatedProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q2Y-9Y-V55"/>
+                        <viewControllerLayoutGuide type="bottom" id="47f-od-LSI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="alY-Yb-jMC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqJ-J9-Wrz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3670" y="-571"/>
         </scene>
         <!--VC1-->
         <scene sceneID="sSn-Jt-ge5">
@@ -24,7 +93,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="VC1" storyboardName="Page1" referencedIdentifier="VC1" id="PkR-NX-emE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SmW-Xc-5hn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2326" y="14"/>
+            <point key="canvasLocation" x="2546" y="464"/>
         </scene>
         <!--VC2-->
         <scene sceneID="NW4-ud-fh5">
@@ -32,7 +101,46 @@
                 <viewControllerPlaceholder storyboardIdentifier="VC2" storyboardName="Page2" referencedIdentifier="VC2" id="Y6s-ax-i8G" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLR-CL-ffO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2325" y="155"/>
+            <point key="canvasLocation" x="2950" y="464"/>
+        </scene>
+        <!--Add Part-->
+        <scene sceneID="DzO-6I-S5j">
+            <objects>
+                <viewController storyboardIdentifier="AddPart" id="mIY-2l-jqM" customClass="AddPart" customModule="GraduatedProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XP2-Xg-uze"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Ex-b3-AEk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G8q-3a-0OQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yrv-jo-AaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3671" y="797"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TeU-Do-90U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wng-ML-cwp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JPA-MG-2cM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5wC-zp-HtK" kind="relationship" relationship="rootViewController" id="5rb-o7-Hi8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQ2-Ib-B48" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831.2" y="110.19490254872565"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Group" width="32" height="32"/>
+    </resources>
 </document>
