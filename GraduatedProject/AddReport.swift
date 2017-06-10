@@ -8,14 +8,15 @@
 
 import Foundation
 import UIKit
-
-class AddReport : UIViewController, UITableViewDataSource, UITableViewDelegate {
+import BEMCheckBox
+class AddReport : UIViewController, UITableViewDataSource, UITableViewDelegate, BEMCheckBoxDelegate {
+    
     
     
     
     
     override func viewDidLoad() {
-    
+        
         
     }
     
@@ -50,9 +51,9 @@ class AddReport : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 200
+            return 220
         } else {
-            return 140
+            return 250
         }
     }
     

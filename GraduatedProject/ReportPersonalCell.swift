@@ -8,7 +8,13 @@
 
 import Foundation
 import UIKit
-
-class ReportPersonalCell : UITableViewCell {
+import BEMCheckBox
+class ReportPersonalCell : UITableViewCell, BEMCheckBoxDelegate {
     
+    
+    @IBOutlet weak var bntReducePersonalDues: BEMCheckBox!
+    @IBOutlet weak var bntAttended: BEMCheckBox!
+    @IBOutlet weak var bntSucceded: BEMCheckBox!
+    
+
 }

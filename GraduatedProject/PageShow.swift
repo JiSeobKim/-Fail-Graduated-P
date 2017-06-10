@@ -8,9 +8,11 @@
 
 import Foundation
 import UIKit
+import BEMCheckBox
 
 class PageShow : UIViewController {
     override func viewDidLoad() {
+        
         
         
     }

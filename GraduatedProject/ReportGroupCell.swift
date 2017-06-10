@@ -8,7 +8,14 @@
 
 import Foundation
 import UIKit
+import BEMCheckBox
 
-class ReportGroupCell : UITableViewCell {
+class ReportGroupCell : UITableViewCell, BEMCheckBoxDelegate {
+    
+    @IBOutlet weak var bntReduceAllDues: BEMCheckBox!
+    
+    
+    
+    
     
 }
