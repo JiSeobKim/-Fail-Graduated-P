@@ -25,6 +25,8 @@
 		A07B505E1EF817BA000FEFBF /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B505D1EF817BA000FEFBF /* PageVC.swift */; };
 		A07B50601EF817C4000FEFBF /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B505F1EF817C4000FEFBF /* Function.swift */; };
 		A07B50621EF81802000FEFBF /* PageLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B50611EF81802000FEFBF /* PageLogs.swift */; };
+		A07B50661EF8214C000FEFBF /* VisitorCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B50651EF8214C000FEFBF /* VisitorCount.swift */; };
+		A07B50681EF8969A000FEFBF /* PageLogsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B50671EF8969A000FEFBF /* PageLogsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		A07B505D1EF817BA000FEFBF /* PageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		A07B505F1EF817C4000FEFBF /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		A07B50611EF81802000FEFBF /* PageLogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageLogs.swift; sourceTree = "<group>"; };
+		A07B50651EF8214C000FEFBF /* VisitorCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorCount.swift; sourceTree = "<group>"; };
+		A07B50671EF8969A000FEFBF /* PageLogsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageLogsCell.swift; sourceTree = "<group>"; };
 		A2B7C3B5C83C54401787C18E /* Pods_Last.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Last.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59612A06292633F0D21620F /* Pods-Last.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Last.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Last/Pods-Last.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +104,7 @@
 				A07B505D1EF817BA000FEFBF /* PageVC.swift */,
 				A07B505F1EF817C4000FEFBF /* Function.swift */,
 				A07B503A1EF81713000FEFBF /* Main.storyboard */,
+				A07B50651EF8214C000FEFBF /* VisitorCount.swift */,
 				A07B50401EF81713000FEFBF /* Assets.xcassets */,
 				A07B50421EF81713000FEFBF /* LaunchScreen.storyboard */,
 				A07B50451EF81713000FEFBF /* Info.plist */,
@@ -114,6 +119,7 @@
 				A07B504B1EF8173E000FEFBF /* PageShow.swift */,
 				A07B504D1EF81745000FEFBF /* PageDetail.swift */,
 				A07B50611EF81802000FEFBF /* PageLogs.swift */,
+				A07B50671EF8969A000FEFBF /* PageLogsCell.swift */,
 				A07B504F1EF81750000FEFBF /* PageMembers.swift */,
 				A07B50511EF81759000FEFBF /* PageMembersCell.swift */,
 			);
@@ -272,12 +278,14 @@
 				A07B505C1EF8179E000FEFBF /* AddPart.swift in Sources */,
 				A07B504E1EF81745000FEFBF /* PageDetail.swift in Sources */,
 				A07B50501EF81750000FEFBF /* PageMembers.swift in Sources */,
+				A07B50661EF8214C000FEFBF /* VisitorCount.swift in Sources */,
 				A07B505E1EF817BA000FEFBF /* PageVC.swift in Sources */,
 				A07B50601EF817C4000FEFBF /* Function.swift in Sources */,
 				A07B50371EF81713000FEFBF /* AppDelegate.swift in Sources */,
 				A07B505A1EF8178C000FEFBF /* AddMember.swift in Sources */,
 				A07B504C1EF8173E000FEFBF /* PageShow.swift in Sources */,
 				A07B50541EF81761000FEFBF /* AddReport.swift in Sources */,
+				A07B50681EF8969A000FEFBF /* PageLogsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

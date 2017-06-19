@@ -17,7 +17,8 @@ class PageMembers : UIViewController, UICollectionViewDelegate, UICollectionView
     override func viewDidLoad() {
         collectionMembers.delegate = self
         collectionMembers.dataSource = self
-    }
+        
+            }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -26,20 +27,21 @@ class PageMembers : UIViewController, UICollectionViewDelegate, UICollectionView
     
     
     
+    var userString :[String] = ["사용자1", "사용자2", "사용자3",
+                                "사용자4", "사용자5", "사용자6",
+                                "사용자7", "사용자8", "사용자9", ]
+
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell : UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MembersCell", for: indexPath)
+        
+        
+        let cell : UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MembersCell", for: indexPath) as! PageMembersCell
         
         configureCell(cell: cell as! PageMembersCell, indexPath: indexPath as NSIndexPath)
         
-        cell.backgroundColor = UIColor(red: 171, green: 178, blue: 186, alpha: 1.0)
-        // Shadow and Radius
-        cell.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        cell.layer.shadowOffset = CGSize(width: 0, height: 2)
-        cell.layer.shadowOpacity = 1.0
-        cell.layer.shadowRadius = 0.0
-        cell.layer.masksToBounds = false
-        cell.layer.cornerRadius = 4.0
+        
+        
         return cell
     }
     
@@ -54,6 +56,18 @@ class PageMembers : UIViewController, UICollectionViewDelegate, UICollectionView
         
         //update cell
         cell.addShadow()
+        var num = indexPath.row
+        
+        cell.nameLabel.text = userString[num]
+        
+        cell.backgroundColor = UIColor(red: 171, green: 178, blue: 186, alpha: 1.0)
+        // Shadow and Radius
+        cell.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 2)
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.shadowRadius = 0.0
+        cell.layer.masksToBounds = false
+        cell.layer.cornerRadius = 4.0
     }
     
     
